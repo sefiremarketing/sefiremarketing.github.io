@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sefire Marketing - Fire Safety Solutions</title>
+    <meta name="description"
+        content="Premium fire safety solutions and equipment. Protect your business with Sefire Marketing.">
+    <!-- Google Fonts for Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Icon library (optional, using SVG for logo) -->
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <!-- SVG Fire Logo -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="fire-icon">
+                    <path fill-rule="evenodd"
+                        d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177 7.547 7.547 0 01-1.705-1.715.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span>Sefire Marketing</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact" class="btn-primary">Get a Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Protecting What Matters Most</h1>
+            <p>Advanced fire safety solutions for modern businesses. Reliability, elegance, and peace of mind.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Request a Quote</a>
+                <a href="#services" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services / Features Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Expertise</h2>
+                <div class="divider"></div>
+                <p>Comprehensive safety marketing and equipment solutions.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box">🛡️</div>
+                    <h3>Safety Audits</h3>
+                    <p>Thorough inspection and risk assessment for your premises.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">🔥</div>
+                    <h3>Fire Suppression</h3>
+                    <p>State-of-the-art extinguishers and suppression systems.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">📚</div>
+                    <h3>Training & Education</h3>
+                    <p>Empowering your team with knowledge and emergency protocols.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map / Location Section -->
+    <section id="location" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Us</h2>
+                <div class="divider"></div>
+                <p>Conveniently located to serve you better.</p>
+            </div>
+            <div class="map-wrapper">
+                <!-- Placeholder for Map - Logic in script.js to inject map based on coords -->
+                <div id="map-container" class="map-placeholder">
+                    <div class="map-message">
+                        <h3>Interactive Map</h3>
+                        <p>Waiting for coordinates...</p>
+                        <button id="update-map-btn" class="btn-secondary small">Set Location</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Quote Section -->
+    <section id="contact" class="section">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Ready to upgrade your safety standards? Get in touch for a personalized quote.</p>
+                <div class="info-item">
+                    <strong>Address:</strong> West Jai Prakash Nagar, Sipara, Patna, Bihar - 800001
+                </div>
+                <div class="info-item">
+                    <strong>Phone:</strong> +91-9386258010
+                </div>
+                <div class="info-item">
+                    <strong>GSTIN:</strong> 10AVLPK4325Q1ZD
+                </div>
+                <div class="info-item">
+                    <strong>PAN:</strong> AVLPK4325Q
+                </div>
+                <div class="info-item">
+                    <strong>Owner:</strong> Anil Kumar
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form id="quote-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Interested Service</label>
+                        <select id="service" name="service">
+                            <option value="consultation">General Consultation</option>
+                            <option value="equipment">Equipment Purchase</option>
+                            <option value="audit">Safety Audit</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Tell us about your needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Get a Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Sefire Marketing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS for Map (Open Source Map) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
